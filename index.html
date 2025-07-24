@@ -6,7 +6,7 @@
         function DisplayCacheProgress(){setTimeout(function(){;document.title="Cache Success !";},1000);setTimeout(function(){window.location.href = document.referrer;},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
     </script>
     <meta charset="UTF-8">
-    <title>SANDRO STORE GAMES GOLDHEN LAPSE</title>
+    <title>SANDRO STORE GAMES</title>
     <link rel='stylesheet' href='./css/index.css'>
   </head>
   <body>
@@ -14,18 +14,18 @@
     <div class="floating-menu">
       <button onclick="showpayloads()" class="menu-btn" id="payloadsbtn">Payloads</button>
       <button class="menu-btn" id="generate-cache-btn">Force-Cache</button>
-      <button class="menu-btn" id="update-exploit">Update-Exploit</button>
-      <button onclick="showsettings()" class="menu-btn" id="settings-btn">Settings</button>
-      <button onclick="showabout()" class="menu-btn" id="about-btn">About</button>
+      <button class="menu-btn" id="update-exploit">Atualizações-Exploit</button>
+      <button onclick="showsettings()" class="menu-btn" id="settings-btn">Configurações</button>
+      <button onclick="showabout()" class="menu-btn" id="about-btn">Sair</button>
     </div>
 
     <div class="header">
-      <div class="header-title" id="header-title">PSFree</div>
+      <div class="header-title" id="header-title">GOLDHEN LAPSE</div>
     </div>
 
     <pre id="update-results" style="white-space: pre-wrap; margin-top: 10px;"></pre>
 
-    <h2 id="PS4FW">PS4 FW: 0.00 | Compatible</h2>
+    <h2 id="PS4FW">PS4 FW: 0.00 | Compatível</h2>
 
     <div id="jailbreak-page">
       <div class="center-btn-wrap">
@@ -41,12 +41,12 @@
     
     <div id="payloads-page" style="display: none;">
       <nav class="floating-menu-payloads">
-        <button id="toolb" onclick="showtoolspayloads()">Tools</button>
-        <button id="gameb" onclick="showgamepayloads()">Games</button>
+        <button id="toolb" onclick="showtoolspayloads()">Ferramentas</button>
+        <button id="gameb" onclick="showgamepayloads()">Jogos</button>
         <button id="linuxb" onclick="showlinuxpayloads()">Linux</button>
       </nav>
       <div id="payloads-tools" style="display: block;">
-        <h2 id="tools">Tools</h2>
+        <h2 id="tools">Ferramentas</h2>
           <div class="button-container" id="button-container">
             <button id="binloader">Bin-Loader</button>
             <button data-func="load_AppDumper">App-Dumper</button>
@@ -76,7 +76,7 @@
           </div>
       </div>
       <div id="payloads-game" style="display: none;">
-        <h2 id="tools">Game</h2>
+        <h2 id="tools">Jogo</h2>
           <div class="button-container" id="button-container">
             <button data-func="load_GTAArbic">GTAV-ArabicGuy-1.27</button>
             <button data-func="load_GTAArbic3">GTAV-ArabicGuy-1.32</button>
@@ -122,7 +122,7 @@
     </div>
     
     <div id="DebugConsole">
-      <h3>Debug Console</h3>
+      <h3>Console de Depuração</h3>
     
       <div class="console" style="padding: 20px;"><pre id='console'></pre></div>
     </div>
@@ -131,21 +131,21 @@
     <!-- About Popup -->
     <div class="overlay" id="overlay-popup"></div>
     <div class="popup" id="about-popup">
-      <h2>About PSFree</h2>
+      <h2>Sobre PSFree</h2>
       <div>
-        <p>Version: 1.5.1</p>
-        <p>A simple web interface for PS4 jailbreak.</p>
+        <p>Versão: 1.5.1</p>
+        <p>Uma interface web simples para jailbreak do PS4.</p>
       </div>
-      <button  onclick="closeabout()" class="close-btn" id="close-about">Close</button>
+      <button  onclick="closeabout()" class="close-btn" id="close-about">Fechar</button>
     </div>
 
     <!-- Settings Popup -->
     <div class="overlay" id="overlay-popup"></div>
     <div class="popup" id="settings-popup">
-      <h2>Settings PSFree</h2>
+      <h2>Configurações PSFree</h2>
 
       <div id="PS4FWOK">
-        <h3>PS4 Firmwares supported</h3>
+        <h3>Firmwares PS4 suportados</h3>
         <div id="listfw">
           <p>7.00 (HEN only)</p>
           <p>7.01 (HEN only)</p>
@@ -169,7 +169,7 @@
       </div>
 
       <div id="choosejb">
-        <h3>Choose your flavor</h3>
+        <h3>Escolha o seu Ativador</h3>
         <div class="radio-group">
           <label>
             <input type="radio" name="hen" value="GoldHEN" onchange="savejbflavor(); choosejb('GoldHEN')"> GoldHEN
@@ -180,16 +180,16 @@
         </div>
         <label id="autojbchkb">
           <input type="checkbox" id="ckbaj" />
-          <p id="agtext">Auto-Jailbreak</p>
+          <p id="agtext">Ativar-Desbloqueio</p>
         </label>
         <label id="debugconsolechkb">
           <input type="checkbox" id="ckbdc" checked />
-          <p id="agtext">Enable Debug Console</p>
+          <p id="agtext">Habilitar Depuração do COnsole</p>
         </label>
       </div>
 
-      <button onclick="closesettings()" class="close-btn" id="close-settings">Close</button>
-      <button data-func="load_PSFreeFix" class="install-psfrf" id="install-psfrf" style="display: none;">Install PSFree-Fix</button>
+      <button onclick="closesettings()" class="close-btn" id="close-settings">Fechar</button>
+      <button data-func="load_PSFreeFix" class="install-psfrf" id="install-psfrf" style="display: none;">Instalar PSFree-Fix</button>
       <!--<button data-func="load_AppCache" class="install-psfrl" id="install-psfrl">Install PSFree-Lite</button>-->
     </div>
     <script src='./js/index.js'></script>
